@@ -16,3 +16,8 @@ period: month => Mensal
 
 No print abaixo o valor 300 informa que o valorização será obtida dos últimos 5 minutos
 ![image](https://github.com/MCaetanoPJ/Api-analyse-investing/assets/39209992/c25a5aca-03c5-4123-805a-eab0ff59b059)
+
+# Site de onde vieram as informações:
+URL: https://br.investing.com/technical/eur-usd-technical-analysis
+![image](https://github.com/MCaetanoPJ/Api-analyse-investing/assets/39209992/71fa8bf0-1678-4403-a73b-c7ea8c6acc6c)
+
