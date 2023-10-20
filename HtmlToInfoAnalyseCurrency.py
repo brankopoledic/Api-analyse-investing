@@ -29,7 +29,7 @@ def HtmlToInfoAnalyseCurrency(html_content, currencyId, period):
                    pointPivot.S3 = col[1].text.strip()
                    pointPivot.S2 = col[2].text.strip()
                    pointPivot.S1 = col[3].text.strip()
-                   pointPivot.PointsPivot = col[4].text.strip()
+                   pointPivot.PointPivot = col[4].text.strip()
                    pointPivot.R1 = col[5].text.strip()
                    pointPivot.R2 = col[6].text.strip()
                    pointPivot.R3 = col[7].text.strip()
