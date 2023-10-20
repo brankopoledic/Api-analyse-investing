@@ -1,5 +1,5 @@
 import requests
-def GetResponseHtml(currencyId, period):
+def GetCurrencyFromAnalyseTechnicalHtml(currencyId, period):
     url = "https://br.investing.com/technical/Service/GetStudiesContent"
 
     payload = f"pairID={currencyId}&period={period}"

@@ -1,14 +1,13 @@
-import string
-
 from fastapi import FastAPI
-from ResponseApi import *
-from ConverterHtmlToDto import *
+from Api.InvestingTechnical import *
+from HtmlToInfoAnalyseCurrency import *
+from Enum.EnumIdCurrency import EnumIdCurrency
 
 app = FastAPI()
 
 @app.get("/IndicatorCurrency/{period}")
 def IndicatorCurrency(period):
-    currencyId = 1
-    responseHtml = GetResponseHtml(currencyId, period)
-    dto = HtmlToDto(responseHtml, currencyId, period)
-    return dto
+    currencyId = EnumIdCurrency.EUR_USD
+    responseHtml = GetCurrencyFromAnalyseTechnicalHtml(currencyId, period)
+    return HtmlToInfoAnalyseCurrency(responseHtml, currencyId, period)
+
