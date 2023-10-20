@@ -2,7 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 from Entities.InfoAnalyseCurrency import *
 from Entities.PointPivot import *
-from ExceptionGeneric import ExceptionGeneric
 
 
 def HtmlToInfoAnalyseCurrency(html_content, currencyId, period):
