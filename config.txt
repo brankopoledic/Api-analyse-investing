@@ -1,0 +1,5 @@
+[BALANCE]
+ValueToSendInOrder = 10
+
+[TIMER]
+TimeToWaitAfterSendOrder = 5

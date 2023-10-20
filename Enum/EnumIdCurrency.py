@@ -1,3 +1,4 @@
+
 class EnumIdCurrency:
     EUR_USD = 1
     GBP_USD = 2
@@ -11,3 +12,4 @@ class EnumIdCurrency:
     EUR_CHF = 10
     GBP_JPY = 11
     GBP_CHF = 12
+    BTC_USD = 21

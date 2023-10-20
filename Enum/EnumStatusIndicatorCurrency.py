@@ -1,5 +1,7 @@
+from enum import Enum
 
-class EnumStatusIndicatorCurrency:
+
+class EnumStatusIndicatorCurrency(Enum):
     COMPRA = 'Compra'
     COMPRA_FORTE = 'Compra Forte'
     VENDA = 'Venda'
