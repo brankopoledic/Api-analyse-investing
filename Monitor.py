@@ -30,8 +30,6 @@ def MonitorSellOrBuyCurrecy(currencyId: EnumIdCurrency):
         sellInMinute05 = indicatorMinute05.Status == indicatorToSell.value
         sellInMinute15 = indicatorMinute15.Status == indicatorToSell.value
 
-
-        #buy = buyInMinute01 and buyInMinute05 and buyInMinute15
         buy = True
         sell = sellInMinute01 and sellInMinute05 and sellInMinute15
 
