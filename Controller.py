@@ -5,9 +5,8 @@ from Enum.EnumIdCurrency import EnumIdCurrency
 
 app = FastAPI()
 
-@app.get("/IndicatorCurrency/{period}")
-def IndicatorCurrency(period):
-    currencyId = EnumIdCurrency.EUR_USD
+@app.get("/IndicatorCurrency/{period}&{currencyId}")
+def IndicatorCurrency(period, currencyId):
     responseHtml = GetCurrencyFromAnalyseTechnicalHtml(currencyId, period)
     return HtmlToInfoAnalyseCurrency(responseHtml, currencyId, period)
 
