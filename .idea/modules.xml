@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Api-analyse-investing.iml" filepath="$PROJECT_DIR$/.idea/Api-analyse-investing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Api-MarketWatcher.iml" filepath="$PROJECT_DIR$/.idea/Api-MarketWatcher.iml" />
     </modules>
   </component>
 </project>

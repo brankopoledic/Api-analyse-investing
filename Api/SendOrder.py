@@ -1,9 +1,14 @@
 import requests
+
+from Configuration import GetConfiguration
 from Enum.EnumOperationType import EnumOperationType
 
 
-def SendOrder(CurrencyName, OperationType : EnumOperationType, Value):
-    url = f"http://127.0.0.1:8000/SendOrder{CurrencyName}&{OperationType}&{Value}"
+def SendOrder(CurrencyName, OperationType : EnumOperationType, Value, DurationInMinutes):
+    configuration = GetConfiguration()
+    urlBaseApiTraderExecute = configuration["URLBaseApiTraderExecute"]
+
+    url = f"{urlBaseApiTraderExecute}/SendOrder{CurrencyName}&{OperationType}&{Value}&{DurationInMinutes}"
 
     headers = {
         'Content-Type': 'application/json'
